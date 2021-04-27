@@ -14,12 +14,28 @@
     
     <div id="staff_pass">
         <h2>Staff Password Validator</h2>
-        <p>Enter your password:<input type="password"></p>
-        <button>Sign In</button>
+        <p>Enter your password:<input id="pass" type="password"></p>
+        
+        <label id="invalid" style="color:red; display: none;">Invalid Password. 
+            <ul>
+                <li>The password must have at least one lowercase letter.</li>
+                <li>The password must have at least one uppercase letter.</li>
+                <li>It must contain (at least) one digit and (at least) one special character.</li>
+                <li>And it must be at least eight characters long.</li>
+            </ul></label>
+        
+        <label id="valid" style="color:green; display: none;">Valid Password</label><br>
+        
+        <button id="pass-button">Sign In</button>
+        <br>
+    </div>
+    
+    <div id='user-gen'>
+
     </div>
 
     <!--jQuery CDN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--JavaScript Script-->
     <script src="script.js"></script>
 </body>
