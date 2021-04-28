@@ -19,59 +19,62 @@
     <div>
         <nav class="navbar fixed-top navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">King's Restaurant</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Menu
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Starters</a></li>
-                          <li><a class="dropdown-item" href="#">Main Courses</a></li>
-                          <li><a class="dropdown-item" href="#">Deserts</a></li>
-                          <li><a class="dropdown-item" href="#">Drinks</a></li>
-                        </ul>
+                <a class="navbar-brand" href="index.html">King's Restaurant</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Starters</a></li>
+                                <li><a class="dropdown-item" href="#">Main Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Deserts</a></li>
+                                <li><a class="dropdown-item" href="#">Drinks</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Staff Login</a>
                         </li>
-                      </li>
+                        </li>
                     </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </div>
 
-    
+
     <div class="jumbotron banner jumbotron-fluid">
         <h1 class="display-4">Welcome to King's Restaurant!</h1>
         <p class="lead">The only thing we love more than food is you!</p>
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p>
-      </div>    
+    </div>
 
 
     <main>
+        <!--Staff Password Validator-->
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div id="staff_pass">
-                        <h2>Staff Password Validator</h2>
-                        <p>Enter your password:<input id="pass" type="password"></p>
+                        <h2>Staff Login</h2>
+                        <p>Password<br><input id="pass" type="password"></p>
                         <label id="invalid" style="color:red; display: none;">Invalid Password.
                             <ul>
                                 <li>The password must have at least one lowercase letter.</li>
@@ -80,22 +83,331 @@
                                 <li>And it must be at least eight characters long.</li>
                             </ul>
                         </label>
-                        <label id="valid" style="color:green; display: none;">Valid Password</label><br>
+                        <label id="valid" style="color:green; display: none;">Valid Password</label>
                         <button class="button-primary" id="pass-button">Sign In</button>
                         <br>
                     </div> <br>
                 </div>
+                <!--Customer API Generator-->
                 <div id='user-api'>
                     <h2>Customer User Generator</h2>
                     <button id="user-gen">Generate Customers</button>
                 </div>
                 <div id="output"></div>
-            </div>
-        </div>
+                <!--Food Menu-->
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                <div class="page-section">
+                                    <h1 class="page-title">Food Menu</h1>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Starters -->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Starters</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Caesar Salad</a></h5>
+                                                    <span class="dish-meta">Chicken / Mixed Leaves / sauce</span>
+                                                    <div class="dish-price">
+                                                        <p><strong>€8.95</strong></p>
+                                                        <input type="radio" class="starters">
+                                                        <input placeholder="Quantity" type="text" id="caesarSalad">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Garlic Bread & Cheese</a></h5>
+                                                    <span class="dish-meta">Rocket / Garlic / Bread </span>
+                                                    <div class="dish-price">
+                                                        <p><strong>€6.95</strong></p>
+                                                        <input type="radio" class="starters">
+                                                        <input placeholder="Quantity" type="text" id="garlicBread">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Vegetable Samosa (Vegetarian)</a>
+                                                    </h5>
+                                                    <span class="dish-meta">Potato / Onion / carrot</span>
+                                                    <div class="dish-price">
+                                                        <p><strong>€5.45</strong></p>
+                                                        <input type="radio" class="starters">
+                                                        <input placeholder="Quantity" type="text" id="caesarSalad">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Main Courses-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Main Courses</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Minestrone</a></h5>
+                                                    <span class="dish-meta"> beans / onions celery / carrots</span>
+                                                    <div class="dish-price">
+                                                        <p>$15</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Tomato soup</a></h5>
+                                                    <span class="dish-meta">Cheesiy / Creamy / Sweet</span>
+                                                    <div class="dish-price">
+                                                        <p>$14</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Cream of broccoli</a> </h5>
+                                                    <span class="dish-meta"> broccoli / milk / cream </span>
+                                                    <div class="dish-price">
+                                                        <p>$9</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Desserts -->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Desserts</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Biryani</a></h5>
+                                                    <span class="dish-meta"> Onion / Tomato</span>
+                                                    <div class="dish-price">
+                                                        <p>$14</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Paneer Butter Masala</a></h5>
+                                                    <span class="dish-meta">Aloo Masala / Aloo Palak
+                                                    </span>
+                                                    <div class="dish-price">
+                                                        <p>$11</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Chole Bhature</a> </h5>
+                                                    <span class="dish-meta"> Rice Soft Idli / Ragi idli / Oats Idli
+                                                    </span>
+                                                    <div class="dish-price">
+                                                        <p>$8</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Drinks-->
+                            <!--Beer-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Beer</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Heineken</a></h5>
+                                                    <span class="dish-meta">Dutch Beer</span>
+                                                    <div class="dish-price">
+                                                        <p>$10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Budweiser</a></h5>
+                                                    <span class="dish-meta">American Beer </span>
+                                                    <div class="dish-price">
+                                                        <p>$8</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Corona</a> </h5>
+                                                    <span class="dish-meta">Mexican Beer</span>
+                                                    <div class="dish-price">
+                                                        <p>$12</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Cocktails-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Cocktails</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Caipirinha</a></h5>
+                                                    <span class="dish-meta">Cachaça / Limes / Sugar / Ice</span>
+                                                    <div class="dish-price">
+                                                        <p>$10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Mojito</a></h5>
+                                                    <span class="dish-meta">Rum / Lime / Soda Water / Mint</span>
+                                                    <div class="dish-price">
+                                                        <p>$8</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Pinã Colada</a> </h5>
+                                                    <span class="dish-meta">Rum / Coconut Cream / Pineapple</span>
+                                                    <div class="dish-price">
+                                                        <p>$12</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Soft Drinks-->
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb40">
+                                <div class="menu-block">
+                                    <h3 class="menu-title">Soft Drinks</h3>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Tonic Water</a></h5>
+                                                    <span class="dish-meta">Onion/Tomato</span>
+                                                    <div class="dish-price">
+                                                        <p>$10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Coca Cola</a></h5>
+                                                    <span class="dish-meta">puffed corn / cheese-flavored </span>
+                                                    <div class="dish-price">
+                                                        <p>$8</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <div class="dish-content">
+                                                    <h5 class="dish-title"><a href="#">Orange Juice</a> </h5>
+                                                    <span class="dish-meta">Ginger garlic / Black pepper</span>
+                                                    <div class="dish-price">
+                                                        <p>$12</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     </main>
 
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
