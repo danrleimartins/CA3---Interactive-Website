@@ -1,5 +1,4 @@
 //Validate Staff Password
-
 function validate(){
     var pass = $('#pass').val();
     var regex = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8})/;
@@ -19,7 +18,6 @@ function validate(){
 $('#pass-button').on('click', validate);
 
 //User Generator API
-
 $('#user-gen').on('click', getData);
 
  function getData() {
