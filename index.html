@@ -48,7 +48,7 @@
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Staff Login</a>
+                            <a class="nav-link" href="#staff">Staff Login</a>
                         </li>
                         </li>
                     </ul>
@@ -57,30 +57,30 @@
         </nav>
     </div>
 
+<!--Jumbotron with Background Image-->
+    <div class="container py-5">
+        <div class="jumbotron text-white shadow text-center">
+          <h2 class="mb-4">
+            Welcome to King's Restaurant
+          </h2>
+        </div>
+      </div>
 
-    <div class="jumbotron banner jumbotron-fluid">
-        <h1 class="display-4">Welcome to King's Restaurant!</h1>
-        <p class="lead">The only thing we love more than food is you!</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-    </div>
-
-
+<hr>
     <main>
         <!--Staff Password Validator-->
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-6 text-center">
                     <div id="staff_pass">
                         <h2>Staff Login</h2>
                         <p>Password<br><input id="pass" type="password"></p>
-                        <label id="invalid" style="color:red; display: none;">Invalid Password.
+                        <label id="invalid" style="color:darkred; display: none;">Invalid Password!
                             <ul>
                                 <li>The password must have at least one lowercase letter.</li>
                                 <li>The password must have at least one uppercase letter.</li>
                                 <li>It must contain (at least) one digit and (at least) one special character.</li>
-                                <li>And it must be at least eight characters long.</li>
+                                <li>And it must be at least 8 characters long.</li>
                             </ul>
                         </label>
                         <label id="valid" style="color:green; display: none;">Valid Password</label>
@@ -89,11 +89,15 @@
                     </div> <br>
                 </div>
                 <!--Customer API Generator-->
-                <div id='user-api'>
-                    <h2>Customer User Generator</h2>
-                    <button id="user-gen">Generate Customers</button>
+                <div class="col-sm-6 text-center">
+                    <div id='user-api'>
+                        <h2>Customer User Generator</h2>
+                        <button id="user-gen">Generate Customers</button>
+                    </div>
+                    <div id="output"></div>
                 </div>
-                <div id="output"></div>
+            </div>
+        </div>
                 <!--Food Menu-->
                 <div class="content">
                     <div class="container">
