@@ -76,13 +76,7 @@
                     <div id="staff_pass">
                         <h2 class="display-5">Staff Login</h2><br>
                         <input id="pass" class="text-center" placeholder="Password" type="password"></p>
-                        <label id="invalid">Invalid Password!
-                            <ul class="list-unstyled" id="pass-li">
-                                <li>The password must have at least one lowercase letter.</li>
-                                <li>The password must have at least one uppercase letter.</li>
-                                <li>It must contain (at least) one digit and (at least) one special character.</li>
-                                <li>And it must be at least 8 characters long.</li>
-                            </ul>
+                        <label id="invalid"><p><small>Your password should contain at least eight characters and at least one upper case letter, one lower case letter, one number and one special character (!,@,#,$,%,^,&,*,(,)). Please update it and try again.</small></p>
                         </label>
                         <label id="valid"><u>Valid Password!</u><br></label>
                         <button class="btn btn-light" id="pass-button">Sign In</button>
@@ -123,8 +117,7 @@
                                             <span class="dish-meta">Chicken / Mixed Leaves / sauce</span>
                                             <div class="dish-price">
                                                 <p>€8.95</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 1" id="item_1">
+                                                <input class="text-center" type="text" name="item_1" id="item_1" data-price="8.95" value="0" size="3">
                                             </div>
                                         </div>
                                     </div>
@@ -138,8 +131,7 @@
                                             <span class="dish-meta">Rocket / Garlic / Bread </span>
                                             <div class="dish-price">
                                                 <p>€6.95</p>
-                                                <input class="text-center" name="item 2" placeholder="Quantity"
-                                                    type="text" id="item_2">
+                                                <input class="text-center" name="item_2" placeholder="Quantity"type="text" id="item_2" data-price="6.95" value="0" size="3">
                                             </div>
                                         </div>
                                     </div>
@@ -154,11 +146,9 @@
                                             <span class="dish-meta">Potato / Onion / carrot</span>
                                             <div class="dish-price">
                                                 <p>€5.45</p>
-                                                <input placeholder="Quantity" class="text-center" name="item 3"
-                                                    type="text" id="item_3">
+                                                <input placeholder="Quantity" class="text-center veg_1" name="item_3" type="text" id="item_3" data-price="5.45" value="0" size="3">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -176,8 +166,7 @@
                                             <span class="dish-meta"> Shrimp / wine / butter / garlic</span>
                                             <div class="dish-price">
                                                 <p>€15</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 4" id="item_4">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_4" id="item_4" data-price="15" value="0" size="3">
                                             </div>
                                         </div>
 
@@ -192,8 +181,7 @@
                                             <span class="dish-meta">Steak / Mashed Potato / Beans</span>
                                             <div class="dish-price">
                                                 <p>€18</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 5" id="item_5">
+                                                <input class="text-center" placeholder="Quantity" type="text"name="item_5" id="item_5" data-price="18" value="0" size="3">
                                             </div>
                                         </div>
 
@@ -208,11 +196,9 @@
                                             <span class="dish-meta"> pumpkin / spinach / pesto</span>
                                             <div class="dish-price">
                                                 <p>€13</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 6" id="item_6">
+                                                <input class="text-center veg_2" placeholder="Quantity" type="text" name="item_6" id="item_6" data-price="13" value="0" size="3">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -230,11 +216,9 @@
                                             <span class="dish-meta">Apple / Cream / Ice-Cream</span>
                                             <div class="dish-price">
                                                 <p>€5.20</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 7" id="item_7">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_7" id="item_7" data-price="5.20" value="0" size="3">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -247,11 +231,9 @@
                                             </span>
                                             <div class="dish-price">
                                                 <p>€5.70</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 8" id="item_8">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_8" id="item_8" data-price="5.70" value="0" size="3">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -264,11 +246,9 @@
                                             </span>
                                             <div class="dish-price">
                                                 <p>€6.45</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 9" id="item_9">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_9" id="item_9" data-price="6.45" value="0" size="3">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -286,8 +266,7 @@
                                             <span class="dish-meta">Dutch Beer</span>
                                             <div class="dish-price">
                                                 <p>€5.50</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item 10" id="item_10">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_10" id="item_10" data-price="5.50" value="0" size="3">
                                             </div>
                                         </div>
                                     </div>
@@ -301,8 +280,7 @@
                                             <span class="dish-meta">Rum / Soda / Lime / Sugar </span>
                                             <div class="dish-price">
                                                 <p>€7.30</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                name="item 11" id="item_11">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_11" id="item_11" data-price="7.30" value="0" size="3">
                                             </div>
                                         </div>
                                     </div>
@@ -316,11 +294,41 @@
                                             <span class="dish-meta">Orange / Sugar / Ice</span>
                                             <div class="dish-price">
                                                 <p>€4.20</p>
-                                                <input class="text-center" placeholder="Quantity" type="text"
-                                                name="item 12" id="item_12">
+                                                <input class="text-center" placeholder="Quantity" type="text" name="item_12" id="item_12" data-price="4.20" value="0" size="3">
                                             </div>
                                         </div>
-
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--Bill-->
+                    <div id="bill" class="col-lg-8 col-md-4 col-sm-6 col-xs-12 mb40">
+                        <div class="menu-block">
+                            <h3 class="menu-title page-title text-center display-6">Final Bill</h3>
+                            <div class="menu-contentx">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-9 col-sm-9 col-xs-12">
+                                        <div class="dish-content text-center">
+                                            <button class="btn btn-light" id="calculate-button">Calculate</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-contentx">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-9 col-sm-9 col-xs-12">
+                                        <div class="dish-content text-center">
+                                            <h5 class="dish-title" id="finalBill">Total Bill: € </h5><br>
+                                            <h5 class="dish-title" id="startersBill">Starters: € </h5><br>
+                                            <h5 class="dish-title" id="mainCoursesBill">Main Courses: €</h5><br>
+                                            <h5 class="dish-title" id="dessertsBill">Desserts: €</h5><br>
+                                            <h5 class="dish-title" id="drinksBill">Drinks: €</h5><br>
+                                            <h5 class="dish-title" id="vegBill">Vegetarian: €</h5><br>
+                                            <h5 class="dish-title" id="nonvegBill">Non-Vegetarian: € </h5>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
