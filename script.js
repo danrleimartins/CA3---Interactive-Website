@@ -1,4 +1,4 @@
-//Validate Staff Password
+//Validate Staff Password - jQuery
 function validate(){
     var pass = $('#pass').val();
     var regex = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8})/;
@@ -17,7 +17,7 @@ function validate(){
 
 $('#pass-button').on('click', validate);
 
-//User Generator API
+//User Generator API - jQuery
 $('#user-gen').on('click', getData);
 
  function getData() {
@@ -51,8 +51,6 @@ $('#user-gen').on('click', getData);
  };
 
  //Calculate Bills for Staff 
-
-
  var totalItems = 12;
 
  function calculateBill(){

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
 body {
 	padding-top: 130px;
-	background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+
+	background: linear-gradient(to right, #414345, #232526);
 }
 
 @media (max-width: 979px) {
@@ -25,7 +28,7 @@ body {
 .navbar-brand {
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 2.45rem;
-	color: #e74c3c;
+	color: #a98964
 }
 
 .navbar-brand:hover {
@@ -34,11 +37,11 @@ body {
 }
 
 a {
-	color: #e74c3c;
+	color: #a98964
 }
 
 .nav-link {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	font-family: 'Berkshire Swash', cursive;
 }
 
@@ -48,12 +51,12 @@ a {
 }
 
 .dropdown-item {
-	color: #e74c3c;
+	color: #a98964;
 	font-family: 'Berkshire Swash', cursive;
 }
 
 .navbar-toggler {
-	background-color: #e74c3c;
+	background-color: #a98964;
 	color: wheat;
 }
 
@@ -62,10 +65,10 @@ a {
 }
 
 .menu-title {
-	border-bottom: 3px solid #e0e6e3;
+	border-bottom: 2px solid #e0e6e3;
 	margin-bottom: 36px;
 	padding-bottom: 10px;
-  font-family: 'Berkshire Swash', cursive; 
+  	font-family: 'Berkshire Swash', cursive; 
 }
 
 .menu-content {
@@ -105,7 +108,7 @@ a {
 }
 
 .jumbotron {
-	background-image: url("./images/restaurant.jpg");
+	background-image: url("./images/main.jpg");
 	background-size: cover;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
@@ -124,12 +127,15 @@ a {
 }
 
 .btn:hover{
-  transform: scale(0.95);
+	transform: scale(0.95);
 	transition: all 0.5s;
 }
 
+.staff-title{
+	font-family: 'Berkshire Swash', cursive; 
+}
+
 #valid {
-	font-family: 'Arvo', serif;
 	color: rgb(31, 135, 31);
 	display: none;
 	font-size: 1.2rem;
@@ -137,23 +143,57 @@ a {
 }
 
 #invalid {
-	font-family: 'Arvo', serif;
-	color: rgb(184, 0, 0);
 	display: none;
 	font-size: 1rem;
 	font-weight: bold;
 }
 
-.users {
-	font-family: 'Arvo', serif;
-}
 
 .img-user {
 	border-radius: 15px 15px 15px 15px;
 }
 
-.page-title{
-  color: #e74c3c;
-font-family: 'Berkshire Swash', cursive; 
+.page-title, .staff-title{
+	color: #a98964;
+	font-family: 'Berkshire Swash', cursive; 
 }
 
+.footer p {
+	color: white;
+	text-align: justify;
+}
+
+.footer h4{
+	color: #a98964;
+	font-family: 'Berkshire Swash', cursive; 
+}
+.footer a {
+	color: #a98964;
+	letter-spacing: 6px;
+}
+
+.pic1{
+	background-image: url("./images/about-us1.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.sub-title {
+	font-family: 'Unica One', cursive;
+}
+
+.pic2{
+	
+	background-image: url("./images/about-us2.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic3{
+	background-image: url("./images/restaurant.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
