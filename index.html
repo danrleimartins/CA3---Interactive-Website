@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King's Restaurant</title>
     <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,10 +44,10 @@
                                 <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#footer">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#staff_pass">Staff Login</a>
+                            <a class="nav-link" href="#staff_pass ">Staff Login</a>
                         </li>
                         </li>
                     </ul>
@@ -59,12 +60,17 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-12">
-                <div class="jumbotron text-white shadow text-center"></div>
+                <div class="jumbotron shadow text-center" id="jumbotron"> 
+                    <h1 class="display-5 p-3 welcome">Welcome to King's Restaurant</h1>
+                    <hr class="text-light text-center rounded" id="hr-jb">
+                    <h3 class="welcome p-3">Since 1926</h3>
+                </div>
                 <hr class="bg-light">
             </div>
         </div>
     </div>
 
+    <!--Body of Website-->
     <main>
         <!--Staff Password Validator & API User Generator -->
         <div class="container-fluid">
@@ -74,9 +80,11 @@
                     <div id="staff_pass">
                         <h2 class="display-5 staff-title">Staff Login</h2><br>
                         <input id="pass" class="text-center" placeholder="Password" type="password"></p>
-                        <label id="invalid"><p class="text-light"><small>Invalid Password, your password should contain at least eight characters and at least one upper case letter, one lower case letter, one number and one special character(!,@,#,$,%,^,&,*,(,)). Please update it and try again.</small></p>
+                        <label id="invalid">
+                            <p class="text-light p-2"><small>Invalid Password, your password should contain at least eight characters and at least one upper case letter, one lower case letter, one number and one special character (!,@,#,$,%,^,&,*,(,)). Please update it and try again.</small>
+                            </p>
                         </label>
-                        <label id="valid"><u>Valid Password!</u><br></label>
+                        <label id="valid"><u>Valid Password!</u><br><br></label>
                         <button class="btn btn-light" id="pass-button">Sign In</button>
                         <br>
                     </div> <br>
@@ -111,12 +119,12 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Caesar Salad</a></h5>
+                                            <h5 class="dish-title">Caesar Salad</h5>
                                             <span class="dish-meta">Chicken / Mixed Leaves / sauce</span>
                                             <div class="dish-price">
                                                 <p>€8.95</p>
                                                 <input class="text-center" type="text" name="item_1" id="item_1"
-                                                    data-price="8.95" value="0" size="3">
+                                                    data-price="8.95" data-type="non-veg" value="0" size="3">
                                             </div>
                                         </div>
                                     </div>
@@ -126,12 +134,13 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Garlic Bread & Cheese</a></h5>
+                                            <h5 class="dish-title">Garlic Bread & Cheese</h5>
                                             <span class="dish-meta">Rocket / Garlic / Bread </span>
                                             <div class="dish-price">
                                                 <p>€6.95</p>
                                                 <input class="text-center" name="item_2" placeholder="Quantity"
-                                                    type="text" id="item_2" data-price="6.95" value="0" size="3">
+                                                    type="text" id="item_2" data-price="6.95" value="0" size="3"
+                                                    data-type="non-veg">
                                             </div>
                                         </div>
                                     </div>
@@ -141,13 +150,14 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Vegetable Samosa (Veg)</a>
+                                            <h5 class="dish-title">Vegetable Samosa (Veg)
                                             </h5>
                                             <span class="dish-meta">Potato / Onion / carrot</span>
                                             <div class="dish-price">
                                                 <p>€5.45</p>
                                                 <input placeholder="Quantity" class="text-center veg_1" name="item_3"
-                                                    type="text" id="item_3" data-price="5.45" value="0" size="3">
+                                                    type="text" id="item_3" data-price="5.45" value="0" size="3"
+                                                    data-type="veg">
                                             </div>
                                         </div>
                                     </div>
@@ -163,15 +173,15 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Shrimp Scampi</a></h5>
+                                            <h5 class="dish-title">Shrimp Scampi</h5>
                                             <span class="dish-meta"> Shrimp / wine / butter / garlic</span>
                                             <div class="dish-price">
                                                 <p>€15</p>
                                                 <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item_4" id="item_4" data-price="15" value="0" size="3">
+                                                    name="item_4" id="item_4" data-price="15" value="0" size="3"
+                                                    data-type="non-veg">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -179,15 +189,15 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Rib-Eye Steak</a></h5>
+                                            <h5 class="dish-title">Rib-Eye Steak</h5>
                                             <span class="dish-meta">Steak / Mashed Potato / Beans</span>
                                             <div class="dish-price">
                                                 <p>€18</p>
                                                 <input class="text-center" placeholder="Quantity" type="text"
-                                                    name="item_5" id="item_5" data-price="18" value="0" size="3">
+                                                    name="item_5" id="item_5" data-price="18" value="0" size="3"
+                                                    data-type="non-veg">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -195,12 +205,13 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Spinach Gnocchi (VEG)</a> </h5>
+                                            <h5 class="dish-title">Spinach Gnocchi (VEG)</h5>
                                             <span class="dish-meta"> pumpkin / spinach / pesto</span>
                                             <div class="dish-price">
                                                 <p>€13</p>
                                                 <input class="text-center veg_2" placeholder="Quantity" type="text"
-                                                    name="item_6" id="item_6" data-price="13" value="0" size="3">
+                                                    name="item_6" id="item_6" data-price="13" value="0" size="3"
+                                                    data-type="veg">
                                             </div>
                                         </div>
                                     </div>
@@ -216,7 +227,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Apple Pie</a></h5>
+                                            <h5 class="dish-title">Apple Pie</h5>
                                             <span class="dish-meta">Apple / Cream / Ice-Cream</span>
                                             <div class="dish-price">
                                                 <p>€5.20</p>
@@ -231,7 +242,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Chocolate Brownie</a></h5>
+                                            <h5 class="dish-title">Chocolate Brownie</h5>
                                             <span class="dish-meta">Chocolate / Vanilla
                                             </span>
                                             <div class="dish-price">
@@ -247,7 +258,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Strawberry Cheesecake</a> </h5>
+                                            <h5 class="dish-title">Strawberry Cheesecake</h5>
                                             <span class="dish-meta"> Crème Brulée / Strawberry
                                             </span>
                                             <div class="dish-price">
@@ -269,7 +280,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Heineken Pint</a></h5>
+                                            <h5 class="dish-title">Heineken Pint</h5>
                                             <span class="dish-meta">Dutch Beer</span>
                                             <div class="dish-price">
                                                 <p>€5.50</p>
@@ -284,7 +295,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Mojito</a></h5>
+                                            <h5 class="dish-title">Mojito</h5>
                                             <span class="dish-meta">Rum / Soda / Lime / Sugar </span>
                                             <div class="dish-price">
                                                 <p>€7.30</p>
@@ -299,7 +310,7 @@
                                 <div class="row">
                                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                         <div class="dish-content">
-                                            <h5 class="dish-title"><a href="#">Orange Juice</a> </h5>
+                                            <h5 class="dish-title">Orange Juice</h5>
                                             <span class="dish-meta">Orange / Sugar / Ice</span>
                                             <div class="dish-price">
                                                 <p>€4.20</p>
@@ -346,14 +357,17 @@
             </div>
         </div>
     </main>
+
     <!--Footer-->
     <footer class="bg-dark">
-        <div class="mt-5 pt-5 pb-5 footer bg-dark">
+        <div class="mt-5 pt-5 pb-5 footer bg-dark" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-xs-12 about-company">
-                        <h4 class="mt-lg-0 mt-sm-4 display-6">Contact Us</h4><hr class="bg-light">
-                        <p class="pr-5 text-justify">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Contact Us</h4>
+                        <hr class="bg-light">
+                        <p class="pr-5 text-justify">Do you have any questions? Please do not hesitate to contact us
+                            directly. Our team will come back to you within a matter of hours to help you.</p>
                         <p class="mb-0"><i class="fa fa-phone mr-3"></i>+353 (01) 2862525</p>
                         <p><i class="fa fa-envelope-o mr-3"></i> kings.restaurant@gmail.com</p>
                         <p class="social-media">
@@ -366,19 +380,26 @@
                     </div>
 
                     <div class="col-lg-4 col-xs-12 about-company">
-                        <h4 class="mt-lg-0 mt-sm-4 display-6">Opening Hours</h4><hr class="bg-light">
-                        <p class="pr-5 text-center">Monday | Tuesday | Wednesday | 10 PM – 8 PM Thursday | Friday | 11 PM – 8 PM <br>Saturday | Sunday 12 PM – 9 PM</p>
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Opening Hours</h4>
+                        <hr class="bg-light">
+                        <p class="pr-5 text-center">Monday | Tuesday | Wednesday | 10 PM – 8 PM Thursday | Friday | 11
+                            PM – 8 PM <br>Saturday | Sunday 12 PM – 9 PM</p>
                     </div>
 
                     <div class="col-lg-4 col-xs-12 location">
-                        <h4 class="mt-lg-0 mt-sm-4 display-6">Location</h4><hr class="bg-white">
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Location</h4>
+                        <hr class="bg-white">
                         <p>4 Florence Terrace, Florence Road, Bray, County Wicklow, Ireland</p>
-                        <div class="text-center shadow-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.780878708507!2d-6.1043848841669!3d53.2038458799494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a868cb470199%3A0x3b47ecb4afd7acb!2s4%20Florence%20Terrace%2C%20Bray%2C%20Co.%20Wicklow!5e0!3m2!1sen!2sie!4v1620292022324!5m2!1sen!2sie" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <div class="text-center shadow-5"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.780878708507!2d-6.1043848841669!3d53.2038458799494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a868cb470199%3A0x3b47ecb4afd7acb!2s4%20Florence%20Terrace%2C%20Bray%2C%20Co.%20Wicklow!5e0!3m2!1sen!2sie!4v1620292022324!5m2!1sen!2sie"
+                                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-5 text-center">
                     <div class="col copyright">
-                        <p class=""><small class="text-white-50">© 2021 Copyright: Danrlei Martins.  All Rights Reserved.</small></p>
+                        <p class=""><small class="text-white-50">© 2021 Copyright: Danrlei Martins. All Rights
+                                Reserved.</small></p>
                     </div>
                 </div>
             </div>
@@ -386,9 +407,12 @@
     </footer>
 
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <!--jQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--JavaScript Script-->
     <script src="script.js"></script>
     <!--Font Awesome CDN-->

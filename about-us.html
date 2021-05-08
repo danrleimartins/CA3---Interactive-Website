@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <!--Navbar-->
     <div>
         <nav class="navbar fixed-top navbar-expand-lg bg-dark">
@@ -30,7 +31,7 @@
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">About Us</a>
+                            <a class="nav-link active" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -57,14 +58,21 @@
     </div>
 
     <!--Restaurant Timeline Using Timeline Js-->
-    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Gj5ENNPHGdSXzerUuT46mWJfVSENAJweOG5pPz5-h8k&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <div class="container-fluid rounded">
+        <iframe
+            src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Gj5ENNPHGdSXzerUuT46mWJfVSENAJweOG5pPz5-h8k&font=Default&lang=en&initial_zoom=2&height=650'
+            width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
 
+    <!--Body of Page-->
     <main>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
                     <h5 class="display-6 page-title p-2 m-2">About King's Restaurant</h5>
-                    <h4 class="p-2 text-light m-2 sub-title">EAT GOOD, DO GOOD</h4><hr class="text-light">
+                    <h4 class="p-2 text-light m-2 sub-title">EAT GOOD, DO GOOD</h4>
+                    <hr class="text-light">
+                    <p class="text-light p-2 about-us">Great food served with a good wine, cold beer, or coffee in a beautiful space with great music playing is our passion.<br> Seasonally, we change our menus to include fresh produce from our local suppliers. We work with some of the best small producers and importers globally, and they never cease to amaze us with their ability to find the best wines of the season.<br> Keeping our menu fresh and exciting is a priority for us. We look after this famous Joycean structure, which we lovingly renovated in 2005. There are some great classics, indie favourites, a lot of Bowie, and the best emerging new talent on our music playlist. So, whether it's a lazy breakfast, brunch, lunch with friends, dinner with family, or a special occasion, celebrate with us in this historic building, where you'll be treated to great music and friendly service, and most importantly, great food!</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="pic1"></div>
@@ -75,12 +83,24 @@
                     <div class="pic2"></div>
                 </div>
                 <div class="col-lg-6">
-                    <h4 class="pt-5 text-light m-2 sub-title">INGREDIENTS OF THE HIGHEST QUALITY</h4><hr class="text-light">
+                    <h4 class="pt-5 text-light m-2 sub-title">INGREDIENTS OF THE HIGHEST QUALITY</h4>
+                    <hr class="text-light">
+                    <p class="text-light p-2 about-us">All of our food is prepared fresh to order with only the finest ingredients.
+                        Our talented Chefs make every parfait, soup, sauce, chutney, and jam in-house.
+                        Our mornings begin before the door even opens, with hand-cut smoked artisan bacon in our famous Full Irish Breakfast or Eggs Benedict with our homemade Hollandaise sauce, to our home roasted granola.<br>
+                        Lunchtime favourites include the fresh Seafood Chowder with a hint of saffron and dill, as well as the Clonakilty Black Pudding & Spanish Chorizo Salad, which will make your mouth water.
+                        You'd wonder if the chefs had a second to spare with our dinner menu, which offers the same level of attention to detail.<br>We know how to complement the best Irish produce, from mature Cashel Blue Cheese on our O'Mahony's dry-aged beef to the milder Crozier blue on our fresh pasta.
+                        Our dessert menu caters to both sweet and savoury palates, with homemade bread & butter pudding and seasonal fruit crumble, as well as a selection of nearly 20 mature cheeses served with our fig and apple chutney.</p>
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <h4 class="pt-5 text-light m-2 sub-title">DRINKS WITH FRIENDS</h4><hr class="text-light">
+                    <h4 class="pt-5 text-light m-2 sub-title">DRINKS WITH FRIENDS</h4>
+                    <p class="text-light p-2 about-us">We work with some of the best small producers and importers globally, and they never cease to amaze us with their ability to find the best wines of the season, keeping our menu fresh and exciting.
+                        While the sight of a freshly settled pint of Guinness is comforting, we also have Carlsberg for our lager fans, as well as a mouth-watering selection of bottled craft beer.<br>The best excuse in the world to end the week with a bottle of crisp Prosecco is our Friday Fizz event.
+                        If you're a coffee connoisseur, we have one of the best single-origin roasts in the country. Michael Kelly of Ashbourne produces Ariosa Coffee, which is slow roasted in small batches for the best flavour and aroma.<br>So why not join us to sample our carefully selected drinks and perhaps sample our famous cheese selection of over 20 mature cheeses accompanied by our homemade apple and fig chutney.</p>
+                    <hr class="text-light">
                 </div>
                 <div class="col-lg-6">
                     <div class="pic3"></div>
@@ -89,10 +109,61 @@
         </div>
     </main>
 
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="mt-5 pt-5 pb-5 footer bg-dark" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12 about-company">
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Contact Us</h4>
+                        <hr class="bg-light">
+                        <p class="pr-5 text-justify">Do you have any questions? Please do not hesitate to contact us
+                            directly. Our team will come back to you within a matter of hours to help you.</p>
+                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>+353 (01) 2862525</p>
+                        <p><i class="fa fa-envelope-o mr-3"></i> kings.restaurant@gmail.com</p>
+                        <p class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-xs-12 about-company">
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Opening Hours</h4>
+                        <hr class="bg-light">
+                        <p class="pr-5 text-center">Monday | Tuesday | Wednesday | 10 PM – 8 PM Thursday | Friday | 11
+                            PM – 8 PM <br>Saturday | Sunday 12 PM – 9 PM</p>
+                    </div>
+
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h4 class="mt-lg-0 mt-sm-4 display-6">Location</h4>
+                        <hr class="bg-white">
+                        <p>4 Florence Terrace, Florence Road, Bray, County Wicklow, Ireland</p>
+                        <div class="text-center shadow-5"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.780878708507!2d-6.1043848841669!3d53.2038458799494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a868cb470199%3A0x3b47ecb4afd7acb!2s4%20Florence%20Terrace%2C%20Bray%2C%20Co.%20Wicklow!5e0!3m2!1sen!2sie!4v1620292022324!5m2!1sen!2sie"
+                                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">© 2021 Copyright: Danrlei Martins. All Rights
+                                Reserved.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <!--jQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--JavaScript Script-->
     <script src="script.js"></script>
     <!--Font Awesome CDN-->

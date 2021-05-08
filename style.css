@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+/*Fonts from fonts.google*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oldenburg&family=Unica+One&family=Viaoda+Libre&display=swap');
 
 body {
 	padding-top: 130px;
@@ -60,6 +59,63 @@ a {
 	color: wheat;
 }
 
+.jumbotron {
+	background-image: url("./images/main.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.jumbotron h2 {
+	padding-top: 50px;
+	font-family: 'Berkshire Swash', cursive;
+	opacity: 65%;
+	font-size: 3rem;
+}
+
+.jumbotron:hover {
+	transform: scale(0.98);
+	transition: all 3s;
+}
+
+.welcome {
+	font-family: 'Viaoda Libre', cursive;
+	font-weight: 100;
+	color: rgba(255, 255, 255, 0.701);
+}
+
+#hr-jb{
+	width: 200px;
+	margin: auto;
+	height: 3px;
+}
+
+.btn:hover{
+	transform: scale(0.95);
+	transition: all 0.5s;
+}
+
+.staff-title{
+	font-family: 'Berkshire Swash', cursive; 
+}
+
+#valid {
+	color: rgb(31, 135, 31);
+	display: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#invalid {
+	display: none;
+	font-size: 1.1rem;	
+	text-align: justify;
+}
+
+.img-user {
+	border-radius: 15px 15px 15px 15px;
+}
+
 .menu-block {
 	margin-bottom: 30px;
 }
@@ -93,6 +149,8 @@ a {
 	font-size: 17px;
 	text-transform: uppercase;
 	position: relative;
+	color: #a98964;
+
 }
 
 .well-block .dish-meta {
@@ -101,56 +159,10 @@ a {
 
 .well-block .dish-price {
 	font-size: 26px;
-	color: #e03c23;
+	color: #a98964;
 	font-weight: 500;
 	font-family: 'Zilla Slab', serif;
 	position: inherit;
-}
-
-.jumbotron {
-	background-image: url("./images/main.jpg");
-	background-size: cover;
-	height: 500px;
-	border-radius: 15px 15px 15px 15px;
-}
-
-.jumbotron h2 {
-	padding-top: 50px;
-	font-family: 'Berkshire Swash', cursive;
-	opacity: 65%;
-	font-size: 3rem;
-}
-
-.jumbotron:hover {
-	transform: scale(0.95);
-	transition: all 2s;
-}
-
-.btn:hover{
-	transform: scale(0.95);
-	transition: all 0.5s;
-}
-
-.staff-title{
-	font-family: 'Berkshire Swash', cursive; 
-}
-
-#valid {
-	color: rgb(31, 135, 31);
-	display: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-}
-
-#invalid {
-	display: none;
-	font-size: 1rem;
-	font-weight: bold;
-}
-
-
-.img-user {
-	border-radius: 15px 15px 15px 15px;
 }
 
 .page-title, .staff-title{
@@ -196,4 +208,12 @@ a {
 	background-size: cover;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
+}
+
+.about-us{
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 1.1rem;
+	letter-spacing: 1.1px;
+	text-align: justify;
+	
 }

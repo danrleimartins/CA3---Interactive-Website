@@ -93,15 +93,19 @@ $('#user-gen').on('click', getData);
         drinksID = document.getElementById('item_' + e);
         drinksTotal += parseInt(drinksID.value) * parseFloat(drinksID.getAttribute('data-price'));
     }
-    //For loop for Vegetable Plates Bill
- /*   for (let g = 4; g <= totalItems; g++){
+    //For loop for comparing veg and non-veg bill
+   for (let g = 1; g <= totalItems; g++) {
 
-        vegID = document.getElementsByClassName('veg_' + g);
-        console.log(vegID);
-        vegTotal += parseInt(vegID.value) * parseFloat(vegID.getAttribute('data-price'));
-        console.log(vegTotal);
-        
-    }*/
+        vegID = document.getElementById('item_' + g);
+
+        if(vegID.getAttribute('data-type') === 'veg'){
+            vegTotal += parseInt(vegID.value) * parseFloat(vegID.getAttribute('data-price'))
+            ;
+        }
+        if (vegID.getAttribute('data-type') === 'non-veg'){
+            nonVegTotal += parseInt(vegID.value) * parseFloat(vegID.getAttribute('data-price'));
+        }
+   }
     
     //Printing final bills
     document.getElementById('finalBill').innerHTML = "Total Bill: €" + total;
@@ -110,5 +114,7 @@ $('#user-gen').on('click', getData);
     document.getElementById('dessertsBill').innerHTML = "Desserts: €" + dessertsTotal; 
     document.getElementById('drinksBill').innerHTML = "Drinks: €" + drinksTotal;
     document.getElementById('vegBill').innerHTML = "Vegetarian: €" + vegTotal;
+    document.getElementById('nonvegBill').innerHTML = "Non-Vegetarian: €" + nonVegTotal;
  }
+ //Adding Event Listener to calculate button
  document.getElementById('calculate-button').addEventListener('click', calculateBill, false);
