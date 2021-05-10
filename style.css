@@ -150,7 +150,6 @@ a {
 	text-transform: uppercase;
 	position: relative;
 	color: #a98964;
-
 }
 
 .well-block .dish-meta {
@@ -196,7 +195,6 @@ a {
 }
 
 .pic2{
-	
 	background-image: url("./images/about-us2.jpg");
 	background-size: cover;
 	height: 500px;
@@ -215,5 +213,5 @@ a {
 	font-size: 1.1rem;
 	letter-spacing: 1.1px;
 	text-align: justify;
-	
+	line-height: 1.9;
 }

@@ -14,13 +14,11 @@ function validate(){
         });
     }
 }
-
+//Adding event listener
 $('#pass-button').on('click', validate);
 
 //User Generator API - jQuery
-$('#user-gen').on('click', getData);
-
- function getData() {
+function getData() {
     //Get API
     fetch('https://randomuser.me/api/?results=5')
     .then(res => res.json())
@@ -49,6 +47,8 @@ $('#user-gen').on('click', getData);
         $('#output').html(output);
     });
  };
+ //Adding event listener
+ $('#user-gen').on('click', getData);
 
  //Calculate Bills for Staff 
  var totalItems = 12;
@@ -115,6 +115,6 @@ $('#user-gen').on('click', getData);
     document.getElementById('drinksBill').innerHTML = "Drinks: €" + drinksTotal;
     document.getElementById('vegBill').innerHTML = "Vegetarian: €" + vegTotal;
     document.getElementById('nonvegBill').innerHTML = "Non-Vegetarian: €" + nonVegTotal;
- }
- //Adding Event Listener to calculate button
- document.getElementById('calculate-button').addEventListener('click', calculateBill, false);
+}
+//Adding Event Listener to calculate button
+document.getElementById('calculate-button').addEventListener('click', calculateBill, false);
