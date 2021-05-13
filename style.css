@@ -3,10 +3,10 @@
 
 body {
 	padding-top: 130px;
-
 	background: linear-gradient(to right, #414345, #232526);
 }
 
+/*Responsive*/
 @media (max-width: 979px) {
 	body {
 		padding-top: 130px;
@@ -31,8 +31,8 @@ body {
 }
 
 .navbar-brand:hover {
-	transform: scale(0.9);
-	transition: all 1s;
+	transform: scale(0.95);
+	transition: all 1.5s;
 }
 
 a {
@@ -47,6 +47,8 @@ a {
 .nav-link:hover {
 	transform: scaleY(1);
 	transition: all 1s;
+	border-bottom: #a98964 solid 5px;
+	border-bottom-width: 1px;
 }
 
 .dropdown-item {
@@ -183,29 +185,74 @@ a {
 	letter-spacing: 6px;
 }
 
+.fab:hover{
+	color: white;
+}
+
 .pic1{
-	background-image: url("./images/about-us1.jpg");
+	background-image: url("./images/pic1.jpg");
 	background-size: cover;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
 }
 
-.sub-title {
-	font-family: 'Unica One', cursive;
-}
-
 .pic2{
-	background-image: url("./images/about-us2.jpg");
+	background-image: url("./images/pic2.jpg");
 	background-size: cover;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
 }
 
 .pic3{
-	background-image: url("./images/restaurant.jpg");
+	background-image: url("./images/pic3.jpg");
 	background-size: cover;
 	height: 500px;
 	border-radius: 15px 15px 15px 15px;
+}
+
+.pic4{
+	background-image: url("./images/pic4.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic5{
+	background-image: url("./images/pic5.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic6{
+	background-image: url("./images/pic6.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic7{
+	background-image: url("./images/pic7.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic8{
+	background-image: url("./images/pic8.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.pic9{
+	background-image: url("./images/pic9.jpg");
+	background-size: cover;
+	height: 500px;
+	border-radius: 15px 15px 15px 15px;
+}
+.sub-title {
+	font-family: 'Unica One', cursive;
 }
 
 .about-us{

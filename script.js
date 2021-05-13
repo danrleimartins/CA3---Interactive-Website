@@ -3,7 +3,7 @@ function validate(){
     var pass = $('#pass').val();
     var regex = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8})/;
 
-    if(regex.test(pass)){
+    if(regex.test(pass)){ //if condition matches requirements, show valid output
         $('#valid').css ({
             'display': 'contents'
         });
@@ -16,6 +16,7 @@ function validate(){
 }
 //Adding event listener
 $('#pass-button').on('click', validate);
+
 
 //User Generator API - jQuery
 function getData() {
@@ -32,16 +33,15 @@ function getData() {
         users.forEach(function(api){
             output += `
                 <br>
-                <div> 
-                        <ul class="list-unstyled"> 
-                            <li><h3>${api.name.title} ${api.name.first} ${api.name.last}</h3></li>
-                            <li> <img class="img-user" src="${api.picture.large}"></li>
-                            <li>Age: ${api.dob.age}</li>
-                            <li>Phone Number: ${api.cell}</li>
-                            <li>Email: ${api.email}</li>
-                            <li>Location: ${api.location.city}, ${api.location.country} </li>
-                        </ul>
-                <hr></div>`;
+                    <ul class="list-unstyled"> 
+                        <li><h3>${api.name.title} ${api.name.first} ${api.name.last}</h3></li>
+                        <li> <img class="img-user" src="${api.picture.large}"></li>
+                        <li>Age: ${api.dob.age}</li>
+                        <li>Phone Number: ${api.cell}</li>
+                        <li>Email: ${api.email}</li>
+                        <li>Location: ${api.location.city}, ${api.location.country} </li>
+                    </ul>
+                <hr>`;
         });
 
         $('#output').html(output);

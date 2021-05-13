@@ -1,4 +1,5 @@
-//Graph using Chart.js
+//Customer Survey Chart using Chart.js framework
+
 let myChart = $('#myChart')[0].getContext('2d');
 
 //Creating new chart object
@@ -9,9 +10,9 @@ let dataChart = new Chart(myChart, {
         datasets: [{
             label: '% of People',
             data: [
-                67,
+                73,
                 20,
-                10,
+                4,
                 2,
                 1
             ],
@@ -31,11 +32,7 @@ let dataChart = new Chart(myChart, {
     options: {
         plugins: {
             legend: { 
-                display: true,
-                position: 'top',
-                labels: {
-                    color: 'black'
-                }
+                display: false
             }
         },
         layout: {
@@ -44,25 +41,3 @@ let dataChart = new Chart(myChart, {
         indexAxis: 'y' //horizontal bar
     }
 });
-
-//Animating pictures using jQuery
-$(document).ready(function(){
-
-    $(".animation").mouseover(function(){
-       $(this).animate({
-                          height:'450px',
-                          width:'auto',
-                          left : '-11px'
-                        })
-    });
-    
-    $(".animation").mouseout(function(){
-       $(this).animate({
-                          height:'500px',
-                          width:'auto',
-                          left : '0px'
-                        })
-    });
-    
-});
-
