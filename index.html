@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!--Navbar-->
+    <!--Navbar - Bootstrap-->
     <div>
         <nav class="navbar fixed-top navbar-expand-lg bg-dark">
             <div class="container-fluid">
@@ -56,11 +56,11 @@
         </nav>
     </div>
 
-    <!--Jumbotron with Background Image-->
+    <!--Jumbotron - Bootstrap-->
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-12">
-                <div class="jumbotron shadow text-center" id="jumbotron"> 
+                <div class="jumbotron shadow text-center" id="jumbotron">
                     <h1 class="display-5 p-3 welcome">Welcome to King's Restaurant</h1>
                     <hr class="text-light text-center rounded" id="hr-jb">
                     <h3 class="welcome p-3">Since 1926</h3>
@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <!--Body of Website-->
+    <!--Body of Website - Bootstrap-->
     <main>
         <!--Staff Password Validator & API User Generator -->
         <div class="container-fluid">
@@ -81,7 +81,10 @@
                         <h2 class="display-5 staff-title">Staff Login</h2><br>
                         <input id="pass" class="text-center" placeholder="Password" type="password"></p>
                         <label id="invalid">
-                            <p class="text-light p-2"><small>Invalid Password, your password should contain at least eight characters and at least one upper case letter, one lower case letter, one number and one special character (!,@,#,$,%,^,&,*,(,)). Please update it and try again.</small>
+                            <p class="text-light p-2"><small>Invalid Password, your password should contain at least
+                                    eight characters and at least one upper case letter, one lower case letter, one
+                                    number and one special character (!,@,#,$,%,^,&,*,(,)). Please update it and try
+                                    again.</small>
                             </p>
                         </label>
                         <label id="valid"><u>Valid Password!</u><br><br></label>
@@ -358,7 +361,7 @@
         </div>
     </main>
 
-    <!--Footer-->
+    <!--Footer - Bootstrap & Font Awesome-->
     <footer class="bg-dark">
         <div class="mt-5 pt-5 pb-5 footer bg-dark" id="footer">
             <div class="container">
@@ -413,10 +416,10 @@
     <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!--JavaScript Script-->
-    <script src="script.js"></script>
     <!--Font Awesome CDN-->
     <script src="https://kit.fontawesome.com/5bdb480a77.js" crossorigin="anonymous"></script>
+    <!--My Script-->
+    <script src="script.js"></script>
 </body>
 
 </html>

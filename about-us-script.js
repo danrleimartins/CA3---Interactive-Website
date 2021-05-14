@@ -41,3 +41,27 @@ let dataChart = new Chart(myChart, {
         indexAxis: 'y' //horizontal bar
     }
 });
+
+//Animate.js - Animating Squares on Navigation Bar
+
+//Create timeline of animations with specified parameters
+let tl = anime.timeline({
+    duration: 750,
+    loop: true,
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+});
+//Adding animations to the timeline variable
+tl.add({
+    targets: '.square', //target of animation
+    translateX: anime.stagger(15, {grid: [4, 3], from: 'center', axis:'x'}),
+    translateY: anime.stagger(15, {grid: [4, 3], from: 'center', axis:'y'}),
+    rotateZ: anime.stagger(100, {grid: [4, 3], from: 'center'}),
+    delay: anime.stagger(200, {grid: [4, 3], from: 'center'})
+}).add({
+    targets: '.square', //target of animation
+    translateX: anime.stagger(10, {grid: [4, 3], from: 'center', axis:'x'}),
+    translateY: anime.stagger(10, {grid: [4, 3], from: 'center', axis:'y'}),
+    rotateZ: anime.stagger(90, 180, {grid: [4, 3], from: 'center'}),
+    delay: anime.stagger(200, {grid: [4, 3], from: 'center'})
+});

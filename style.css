@@ -27,7 +27,7 @@ body {
 .navbar-brand {
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 2.45rem;
-	color: #a98964
+	color: #a98964;
 }
 
 .navbar-brand:hover {
@@ -45,8 +45,6 @@ a {
 }
 
 .nav-link:hover {
-	transform: scaleY(1);
-	transition: all 1s;
 	border-bottom: #a98964 solid 5px;
 	border-bottom-width: 1px;
 }
@@ -261,4 +259,16 @@ a {
 	letter-spacing: 1.1px;
 	text-align: justify;
 	line-height: 1.9;
+}
+
+.square{
+	width: 10px;
+	height: 10px;
+	background: linear-gradient(to left, #a98964, #ffff);
+	margin-left: 1px;
+}
+
+#myChart:hover{
+	transform: scale(0.95);
+	transition: all 2s;
 }
