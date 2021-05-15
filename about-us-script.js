@@ -1,4 +1,4 @@
-//Customer Survey Chart using Chart.js framework
+//Customer Survey Chart using Chart.js Framework
 
 let myChart = $('#myChart')[0].getContext('2d');
 
